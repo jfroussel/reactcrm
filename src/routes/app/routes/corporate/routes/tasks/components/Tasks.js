@@ -7,7 +7,7 @@ class Task extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
-      title: "Tasks section",
+      title: "Tasks section main ",
       lead:"This is a simple hero unit, a simple Jumbotron-style component for calling extra attention\n" +
       "            to featured content or information.",
       message:"It uses utility classes for typgraphy and spacing to space content out within the larger container.",
