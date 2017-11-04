@@ -9,9 +9,14 @@ class Customizer extends React.Component {
 
   componentDidMount() {
     const quickviewInner = this.quickview;
-    $(quickviewInner).slimscroll({
-      height: '100%'
-    });
+    if(APPCONFIG.ActiveSettings){
+      $(quickviewInner).slimscroll({
+        height: '100%'
+      });
+    } else{
+      $("#quickview-customizer").detach();
+    }
+
   }
 
   toggleCustomizer = () => {
@@ -27,6 +32,7 @@ class Customizer extends React.Component {
 
   render() {
     return (
+
       <section
         className="quickview-wrapper customizer d-none d-lg-block d-xl-block theme-light"
         id="quickview-customizer"

@@ -7,6 +7,7 @@ const APPCONFIG = {
   year,
   productLink: 'https://jfroussel.com',
   AutoCloseMobileNav: true,                         // true, false. Automatically close sidenav on route change (Mobile only)
+  ActiveSettings:false,                             // true, false  detach Customizer
   color: {
     primary: '#00BCD4',
     success: '#8BC34A',

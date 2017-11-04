@@ -1,40 +1,120 @@
 import React from 'react';
-import { Jumbotron, Button } from 'reactstrap';
+import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn, TableFooter} from 'material-ui/Table';
+import TextField from 'material-ui/TextField';
+import Toggle from 'material-ui/Toggle';
+import QueueAnim from 'rc-queue-anim';
+import Toolbar from './Toolbar';
+import BottomToolbar from './BottomToolbar';
 
 
-class Company extends React.Component{
+const TableCompanies = () => (
 
+  <article className="article">
+    <Toolbar/>
+    <Table>
+      <TableHeader>
+        <TableRow>
+          <TableHeaderColumn>ID</TableHeaderColumn>
+          <TableHeaderColumn>Name</TableHeaderColumn>
+          <TableHeaderColumn>Status</TableHeaderColumn>
+        </TableRow>
+      </TableHeader>
+      <TableBody>
+        <TableRow>
+          <TableRowColumn>1</TableRowColumn>
+          <TableRowColumn>John Smith</TableRowColumn>
+          <TableRowColumn>Employed</TableRowColumn>
+        </TableRow>
+        <TableRow>
+          <TableRowColumn>2</TableRowColumn>
+          <TableRowColumn>Randal White</TableRowColumn>
+          <TableRowColumn>Unemployed</TableRowColumn>
+        </TableRow>
+        <TableRow>
+          <TableRowColumn>3</TableRowColumn>
+          <TableRowColumn>Stephanie Sanders</TableRowColumn>
+          <TableRowColumn>Employed</TableRowColumn>
+        </TableRow>
+        <TableRow>
+          <TableRowColumn>4</TableRowColumn>
+          <TableRowColumn>Steve Brown</TableRowColumn>
+          <TableRowColumn>Employed</TableRowColumn>
+        </TableRow>
+      </TableBody>
+    </Table>
+  </article>
+);
+const styles = {
+  propContainer: {
+    width: 200,
+    overflow: 'hidden',
+    margin: '20px auto 0',
+  },
+  propToggleHeader: {
+    margin: '20px auto 10px',
+  },
+};
+
+const tableData = [
+  {
+    name: 'John Smith',
+    status: 'Employed',
+    selected: true,
+  },
+  {
+    name: 'Randal White',
+    status: 'Unemployed',
+  },
+  {
+    name: 'Stephanie Sanders',
+    status: 'Employed',
+    selected: true,
+  },
+  {
+    name: 'Steve Brown',
+    status: 'Employed',
+  },
+  {
+    name: 'Joyce Whitten',
+    status: 'Employed',
+  },
+  {
+    name: 'Samuel Roberts',
+    status: 'Employed',
+  },
+  {
+    name: 'Adam Moore',
+    status: 'Employed',
+  },
+];
+
+
+
+class Company extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      title: "Companies section",
-      lead:"This is a simple hero unit, a simple Jumbotron-style component for calling extra attention\n" +
-      "            to featured content or information.",
-      message:"It uses utility classes for typgraphy and spacing to space content out within the larger container.",
-      btnMessage:"Learn more"
+
     };
   }
 
+
   render() {
     return (
-      <div>
-        <Jumbotron>
-          <h1 className="display-3">{this.state.title}</h1>
-          <p className="lead">{this.state.lead}</p>
-          <hr className="my-2"/>
-          <p>{this.state.message}</p>
-          <p className="lead">
-            <Button color="primary">{this.state.btnMessage}</Button>
-          </p>
-        </Jumbotron>
+
+      <div className="container-fluid with-maxwidth chapter">
+        <QueueAnim type="bottom" className="ui-animate">
+          <div key="1"><TableCompanies /></div>
+          <BottomToolbar/>
+        </QueueAnim>
       </div>
     );
   }
-
 }
 
-export default Company;
 
 
 
 
+module.exports = Company;
