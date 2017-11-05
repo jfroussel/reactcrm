@@ -1,0 +1,16 @@
+
+.fc-toolbar {
+  padding-top: 1em;
+}
+.fc-center h2 {
+  font-size: 1.40em;
+  text-transform: uppercase;
+}
+.fc-day-grid {
+  background-color: #FFF;
+}
+
+#calendar {
+  padding-left: 1em;
+  padding-right: 1em;
+}
