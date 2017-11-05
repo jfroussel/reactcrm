@@ -1,7 +1,5 @@
 import React from 'react';
 import {Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableRowColumn, TableFooter} from 'material-ui/Table';
-import TextField from 'material-ui/TextField';
-import Toggle from 'material-ui/Toggle';
 import QueueAnim from 'rc-queue-anim';
 import Toolbar from './Toolbar';
 import BottomToolbar from './BottomToolbar';
@@ -44,50 +42,6 @@ const TableCompanies = () => (
     </Table>
   </article>
 );
-const styles = {
-  propContainer: {
-    width: 200,
-    overflow: 'hidden',
-    margin: '20px auto 0',
-  },
-  propToggleHeader: {
-    margin: '20px auto 10px',
-  },
-};
-
-const tableData = [
-  {
-    name: 'John Smith',
-    status: 'Employed',
-    selected: true,
-  },
-  {
-    name: 'Randal White',
-    status: 'Unemployed',
-  },
-  {
-    name: 'Stephanie Sanders',
-    status: 'Employed',
-    selected: true,
-  },
-  {
-    name: 'Steve Brown',
-    status: 'Employed',
-  },
-  {
-    name: 'Joyce Whitten',
-    status: 'Employed',
-  },
-  {
-    name: 'Samuel Roberts',
-    status: 'Employed',
-  },
-  {
-    name: 'Adam Moore',
-    status: 'Employed',
-  },
-];
-
 
 
 class Company extends React.Component {
@@ -98,7 +52,6 @@ class Company extends React.Component {
 
     };
   }
-
 
   render() {
     return (
@@ -112,9 +65,6 @@ class Company extends React.Component {
     );
   }
 }
-
-
-
 
 
 module.exports = Company;
