@@ -96,22 +96,22 @@ class SidebarContent extends React.Component {
           <FlatButton href="#/app/dashboard"><i className="nav-icon material-icons">dashboard</i><span className="nav-text">Dashboard</span></FlatButton>
         </li>
         <li>
-          <FlatButton href="#/app/corporate/calendars"><i className="nav-icon material-icons">event</i><span className="nav-text">Agenda</span></FlatButton>
+          <FlatButton href="#/app/corporate/calendars"><i className="nav-icon material-icons">event</i><span className="nav-text">Calendar</span></FlatButton>
         </li>
         <li>
-          <FlatButton href="#/app/corporate/companies"><i className="nav-icon material-icons">business</i><span className="nav-text">Société</span></FlatButton>
+          <FlatButton href="#/app/corporate/companies"><i className="nav-icon material-icons">business</i><span className="nav-text">Companies</span></FlatButton>
         </li>
         <li>
           <FlatButton href="#/app/corporate/contacts"><i className="nav-icon material-icons">group</i><span className="nav-text">Contacts</span></FlatButton>
         </li>
         <li>
-          <FlatButton href="#/app/corporate/folders"><i className="nav-icon material-icons">folder_open</i><span className="nav-text">Dossiers</span></FlatButton>
+          <FlatButton href="#/app/corporate/folders"><i className="nav-icon material-icons">folder_open</i><span className="nav-text">Folders</span></FlatButton>
         </li>
         <li>
-          <FlatButton href="#/app/corporate/tasks"><i className="nav-icon material-icons">assignment_turned_in</i><span className="nav-text">Tâches</span></FlatButton>
+          <FlatButton href="#/app/corporate/tasks"><i className="nav-icon material-icons">assignment_turned_in</i><span className="nav-text">Tasks</span></FlatButton>
         </li>
         <li>
-          <FlatButton href="#/app/corporate/projects"><i className="nav-icon material-icons">folder</i><span className="nav-text">Projets</span></FlatButton>
+          <FlatButton href="#/app/corporate/projects"><i className="nav-icon material-icons">folder</i><span className="nav-text">Projects</span></FlatButton>
         </li>
       </ul>
     );

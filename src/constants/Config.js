@@ -2,7 +2,7 @@ const date = new Date();
 const year = date.getFullYear();
 
 const APPCONFIG = {
-  brand: 'React-CRM',
+  brand: 'MyreactCRM',
   user: 'jeff',
   year,
   productLink: 'https://jfroussel.com',
